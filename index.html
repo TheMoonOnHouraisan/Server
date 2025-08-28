@@ -30,7 +30,32 @@
       .column {
         flex-direction: column;
       }
+      .toubu {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      /* 新增：链接容器横向排列 */
+      .nav-links {
+        display: flex;
+        width: 100%;
+      }
     </style>
   </head>
-  <body class="flex"></body>
+  <body>
+    <!-- 顶部栏 -->
+    <div style="height: 50px" class="nav-links">
+      <!-- 游玩方法 -->
+      <div class="flex1">
+        <a href="method.html">游玩方法</a>
+      </div>
+      <!-- 玩前必看 -->
+      <div class="flex1">
+        <a href="must_see.html">玩前必看</a>
+      </div>
+      <!-- 游玩须知 -->
+      <div class="flex1">
+        <a href="rule.html">游玩规则</a>
+      </div>
+    </div>
+  </body>
 </html>
