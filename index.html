@@ -1,60 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minecraft幻想鄉</title>
     <style>
       body {
         margin: 0;
-        height: 100vh;
+        min-height: 100vh; /* 使用min-height确保内容少时也能占满屏幕 */
         background-image: url(https://img.paulzzh.com/touhou/random);
-        background-repeat: no-repeat; /* 避免图片重复平铺 */
-        background-position: center; /* 图片居中显示 */
+        background-color: rgba(255, 255, 255, 0.5);
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
+        background-attachment: fixed; /* 背景图固定，滚动时不移动 */
       }
+
       * {
-        border: 1px solid black;
+        box-sizing: border-box; /* 确保边框包含在元素尺寸内 */
+        /* border: 1px solid black; */
       }
+
       .flex {
         display: flex;
       }
+
       .baise {
         background-color: white;
       }
+
       .flex1 {
-        flex: 1;
+        flex: 1; /* 均匀分配空间 */
       }
+
       .column {
         flex-direction: column;
       }
+
       .toubu {
         flex-direction: column;
         justify-content: space-between;
       }
-      /* 新增：链接容器横向排列 */
+
+      /* 导航容器样式 */
+      .nav-container {
+        display: flex;
+        /* 利用flex布局的默认特性，宽度会自动适应内容 */
+      }
+
+      /* 导航链接样式 */
       .nav-links {
         display: flex;
-        width: 100%;
+        flex: 1; /* 让导航占满可用空间 */
+      }
+
+      .nav-links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        transition: background-color 0.3s;
+      }
+
+      .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
       }
     </style>
   </head>
   <body>
-    <!-- 顶部栏 -->
-    <div style="height: 50px" class="nav-links">
-      <!-- 游玩方法 -->
-      <div class="flex1">
-        <a href="method.html">游玩方法</a>
-      </div>
-      <!-- 玩前必看 -->
-      <div class="flex1">
-        <a href="must_see.html">玩前必看</a>
-      </div>
-      <!-- 游玩须知 -->
-      <div class="flex1">
-        <a href="rule.html">游玩规则</a>
+    <!-- 顶部导航栏 -->
+    <div class="nav-container">
+      <div class="nav-links">
+        <!-- 游玩方法 -->
+        <div class="flex1">
+          <a href="method.html">游玩方法</a>
+        </div>
+        <!-- 玩前必看 -->
+        <div class="flex1">
+          <a href="must_see.html">玩前必看</a>
+        </div>
+        <!-- 游玩须知 -->
+        <div class="flex1">
+          <a href="rule.html">游玩规则</a>
+        </div>
       </div>
     </div>
   </body>
