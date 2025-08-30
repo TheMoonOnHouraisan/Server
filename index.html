@@ -18,7 +18,7 @@
 
       * {
         box-sizing: border-box; /* 确保边框包含在元素尺寸内 */
-        /* border: 1px solid black; */
+        border: 1px solid black;
       }
 
       .flex {
@@ -69,9 +69,18 @@
       .nav-links a:hover {
         background-color: rgba(255, 255, 255, 0.2);
       }
+      .dazi {
+        display: flex;
+      }
     </style>
   </head>
-  <body>
+  <body
+    style="
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    "
+  >
     <!-- 顶部导航栏 -->
     <div class="nav-container">
       <div class="nav-links">
@@ -89,5 +98,13 @@
         </div>
       </div>
     </div>
+    <!-- 大字 -->
+    <div class="dazi" style="flex-direction: column">
+      <h1 style="color: white; margin: 10px">Minecraft幻想鄉</h1>
+      <h3 style="color: whitesmoke; margin: 10px">♦♦♦站长：MC_星冉</h3>
+    </div>
+    <!-- 布局用空盒子 -->
+    <div></div>
+    <div></div>
   </body>
 </html>
