@@ -4,15 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box; /* 确保边框包含在元素尺寸内 */
+        border: 1px solid black;
+      }
+      .neirong {
+        flex-direction: column;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh; /* 使用min-height确保内容少时也能占满屏幕 */
+        background-image: url(https://img.paulzzh.com/touhou/random);
+        background-color: rgba(255, 255, 255, 0.5);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed; /* 背景图固定，滚动时不移动 */
+      }
+      .baise {
+        background-color: rgba(240, 255, 255, 0.59);
+      }
+    </style>
   </head>
   <body>
-    <div style="display: flex; flex-direction: column">
-      <h2>游玩须知</h2>
-      <p>在这个服务器 可以选择游玩生存或创造 但主要以生存为主</p>
-      <p>需要创造模式的玩家请向管理员申请</p>
-      <p>并且只有粘土人或是具有一定规模的建筑可以申请创造</p>
-      <p>PS：管理和服主都好说话，但是请不要太过分</p>
-      <a href="index.html">返回主页</a>
-    </div>
+    <div
+      style="margin: 60px; height: 80vh; display: flex; border-radius: 25px"
+      class="neirong baise"
+    ></div>
   </body>
 </html>
