@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft幻想鄉 - 玩前必看</title>
+    <title>玩前必看</title>
     <style>
       * {
         box-sizing: border-box; /* 确保边框包含在元素尺寸内 */
-        border: 1px solid black;
+        /* border: 1px solid black; */
       }
       .neirong {
         flex-direction: column;
@@ -23,14 +23,86 @@
         background-attachment: fixed; /* 背景图固定，滚动时不移动 */
       }
       .baise {
-        background-color: rgba(240, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.593);
+      }
+      .da_kuang_jian_ju {
+        margin: 20px;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .flex2 {
+        flex: 2;
+      }
+      .flex3 {
+        flex: 3;
+      }
+      .shadow {
+        box-shadow: 2px 2px 2px 2px gray;
       }
     </style>
   </head>
   <body>
     <div
-      style="margin: 60px; height: 80vh; display: flex; border-radius: 25px"
+      style="
+        margin: 60px;
+        display: flex;
+        border-radius: 25px;
+        flex-direction: column;
+      "
       class="neirong baise"
-    ></div>
+    >
+      <div
+        style="display: flex; flex-direction: column"
+        class="flex2 da_kuang_jian_ju"
+      >
+        <h1 style="margin: 10px">玩前必看</h1>
+        <div style="border: 0.6px solid rgb(74, 73, 73)"></div>
+        <div style="display: flex; flex-direction: column">
+          <h2>各个生存区的照片</h2>
+          <div>
+            <a
+              href="area_pictures/"
+              style="
+                color: black;
+                font-size: 20px;
+                text-shadow: 2px 2px 3px rgb(119, 143, 229);
+              "
+              class="shadow"
+              >生存区一</a
+            >
+          </div>
+        </div>
+      </div>
+      <div style="display: flex" class="flex3 da_kuang_jian_ju">
+        <div
+          style="
+            border-radius: 10px;
+            margin: 15px;
+            background-color: rgba(255, 255, 255, 0.416);
+          "
+          class="flex1"
+        >
+          <p>
+            适合东方IP玩家的MINECRAFT幻想乡服务器，
+            主打纯生存模式，新手物资丰富， 设施齐全，主城含隐藏彩蛋与风景，
+            服主友好，群内可协作游戏并有机会惊喜奖励，
+            诚邀东方厨与MC爱好者加入体验养老漫步与探索乐趣。
+          </p>
+        </div>
+      </div>
+      <div style="display: flex" class="flex1 da_kuang_jian_ju">
+        <a
+          href="index.html"
+          style="
+            font-size: 20px;
+            box-shadow: 2px 2px 2px 2px gray;
+            color: black;
+          "
+          class="flex1"
+          >返回主页</a
+        >
+      </div>
+    </div>
   </body>
 </html>

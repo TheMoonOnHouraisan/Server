@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft幻想鄉 - 游玩规则</title>
+    <title>游玩规则</title>
     <style>
       * {
         box-sizing: border-box; /* 确保边框包含在元素尺寸内 */
-        border: 1px solid black;
+        /* border: 1px solid black; */
       }
       .neirong {
         flex-direction: column;
@@ -23,14 +23,79 @@
         background-attachment: fixed; /* 背景图固定，滚动时不移动 */
       }
       .baise {
-        background-color: rgba(240, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.593);
+      }
+      .da_kuang_jian_ju {
+        margin: 20px;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .flex2 {
+        flex: 2;
+      }
+      .flex3 {
+        flex: 3;
+      }
+      .shadow {
+        box-shadow: 2px 2px 2px 2px gray;
       }
     </style>
   </head>
   <body>
     <div
-      style="margin: 60px; height: 80vh; display: flex; border-radius: 25px"
+      style="
+        margin: 60px;
+
+        display: flex;
+        border-radius: 25px;
+        flex-direction: column;
+      "
       class="neirong baise"
-    ></div>
+    >
+      <div
+        style="display: flex; flex-direction: column"
+        class="flex2 da_kuang_jian_ju"
+      >
+        <h1 style="margin: 10px" class="shadow">游玩规则</h1>
+        <div style="border: 0.6px solid rgb(74, 73, 73)"></div>
+
+          <b>QQ群号：1055170877</b>
+        </div>
+      
+      <div style="display: flex" class="flex3 da_kuang_jian_ju">
+        <div
+          style="
+            border-radius: 10px;
+            margin: 15px;
+            background-color: rgba(255, 255, 255, 0.416);
+          "
+          class="flex1"
+        >
+          <p style="margin: 1px">——『麦块』幻想°大群聊 ——</p>
+          <p style="margin: 1px">• 本群mc服务器群请联系管理和群主</p>
+          <p style="margin: 1px">• 东方众可以在这交流…</p>
+          <p style="margin: 1px">• 欢迎邀请新人和更多同好！</p>
+          <p style="margin: 1px">——————群规——————</p>
+          <p style="margin: 1px">1. 不准吵架，不准阴阳他人</p>
+          <p style="margin: 1px">2. 此群为东方群不准提原神</p>
+          <p style="margin: 1px">3.不许见证，发黄色，聊争议敏感话题</p>
+          <p style="margin: 1px">进mc群请联系管理员和群主</p>
+        </div>
+      </div>
+      <div style="display: flex" class="flex1 da_kuang_jian_ju">
+        <a
+          href="index.html"
+          style="
+            font-size: 20px;
+            box-shadow: 2px 2px 2px 2px gray;
+            color: black;
+          "
+          class="flex1"
+          >返回主页</a
+        >
+      </div>
+    </div>
+    </div>
   </body>
 </html>
